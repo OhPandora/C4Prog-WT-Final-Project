@@ -139,3 +139,47 @@ footer p {
 nav a:hover {
     color: #6B705C;
 }
+
+
+/* Contact Form */
+
+.contact-form {
+    max-width: 680px;
+    margin: 40px auto;
+}
+
+.form-group {
+    margin-bottom: 45px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #D9D9D9;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    display: block;
+    width: 210px;
+    padding: 14px;
+    margin: 60px auto 0;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
