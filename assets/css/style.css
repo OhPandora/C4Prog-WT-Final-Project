@@ -1,0 +1,141 @@
+/* General page styles */
+
+body {
+    background-color: #FEFAE0;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+
+header {
+    background-color: #CCD5AE;
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Navigation styles */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Main content styles */
+
+main {
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Welcome section */
+
+#welcome {
+    background-color: #E9EDC9;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#welcome h2 {
+    font-size: 32px;
+}
+
+#welcome h3 {
+    font-size: 22px;
+}
+
+/* About Me section */
+
+#about-me {
+    background-color: #FAEDCD;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#about-me p {
+    line-height: 1.6;
+}
+
+#about-me a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* My Projects section */
+
+#my-projects {
+    background-color: #E9EDC9;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border: 1px solid #CCD5AE;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    color: #000000;
+    margin-top: 0;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #CCD5AE;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #000000;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Navigation hover effect */
+
+nav a:hover {
+    color: #6B705C;
+}
