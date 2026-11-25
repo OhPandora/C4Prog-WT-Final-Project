@@ -1,9 +1,6 @@
 node_modules/
 .idea/
 
-# Private API key
-assets/js/api-key.js
-
 # Evidence folders
 /evidence/
 
