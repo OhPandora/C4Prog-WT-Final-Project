@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Project | Cristina Noguera Martinez</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/api-key.js" defer></script>
+    <script src="../assets/js/sample-project.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="header-container">
+            <h1>Cristina Noguera Martinez</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="mywork.html">Sample Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="sample-title">Sample Project</h2>
+
+        
+        <section class="api-section">
+            <h3>Ninja API App</h3>
+
+            <p>Select an API and enter a word to search.</p>
+
+            <form id="api-form" novalidate>
+                <fieldset>
+                    <legend>Pick from the following APIs</legend>
+
+                    <div class="api-options">
+                        <label for="dictionary-api">
+                            <input type="checkbox" id="dictionary-api"
+                                name="api-option" value="dictionary">
+                            Dictionary
+                        </label>
+
+                        <label for="thesaurus-api">
+                            <input type="checkbox" id="thesaurus-api"
+                                name="api-option" value="thesaurus">
+                            Thesaurus
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-card">
+                    <div class="form-input">
+                        <label for="search-word">Enter a word:</label>
+                        <input type="text" id="search-word"
+                            name="search-word" placeholder="e.g. computer" required>
+                    </div>
+
+                    <button type="submit" id="get-response">
+                        Get Response
+                    </button>
+                </div>
+            </form>
+
+            <section class="api-response" aria-live="polite">
+                <h4>Hope you like the results!</h4>
+
+                <div id="response-content">
+                    Your API response will appear here.
+                </div>
+            </section>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>
+            2026 Cristina Noguera Martinez. All rights reserved.
+            <a href="../copyright.html">Copyright</a>
+        </p>
+    </footer>
+
+</body>
+</html>
