@@ -3,3 +3,7 @@ node_modules/
 
 # Private API key
 assets/js/api-key.js
+
+# Evidence folders
+/evidence/
+
