@@ -6,24 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Cristina Noguera Martinez</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="header-container">
+    <header class="bg-[#CCD5AE] border border-black p-5">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
 
-            <h1>Cristina Noguera Martinez</h1>
+            <h1 class="text-xl font-bold">
+                Cristina Noguera Martinez
+            </h1>
 
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="sample-projects/mywork.html">Sample Project</a></li>
+                <ul class="flex flex-wrap justify-center gap-5">
+                    <li><a href="index.html" class="font-bold text-black hover:text-[#6B705C]">Home</a></li>
+                    <li><a href="about.html" class="font-bold text-black hover:text-[#6B705C]">About</a></li>
+                    <li><a href="resume.html" class="font-bold text-black hover:text-[#6B705C]">Resume</a></li>
+                    <li><a href="projects.html" class="font-bold text-black hover:text-[#6B705C]">Projects</a></li>
+                    <li><a href="contact.html" class="font-bold text-black hover:text-[#6B705C]">Contact</a></li>
+                    <li><a href="sample-projects/mywork.html" class="font-bold text-black hover:text-[#6B705C]">Sample Project</a></li>
                 </ul>
             </nav>
 
@@ -33,35 +35,45 @@
     <main>
 
         
-<section id="about-me" class="about-container">
+<!-- About Me Section -->
+<section id="about-me" class="bg-[#FAEDCD] p-8 md:p-10 rounded-xl mt-10 mb-10 max-w-7xl mx-auto">
 
-    <figure class="about-image">
-        <img src="assets/img/about-me.jpg" alt="Photo of Cristina">
-    </figure>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-    <div class="about-text">
+        <figure>
+            <img
+                src="assets/img/about-me.jpg"
+                alt="Photo of my self"
+                class="w-full max-w-sm mx-auto rounded-xl object-cover">
+        </figure>
 
-        <h2>About Me</h2>
+        <div>
 
-        <p>
-            I'm an IT student based in Perth, Australia,
-            with a strong interest in programming and
-            technology-related fields.
-        </p>
+            <h2 class="text-2xl font-bold mb-6">
+                About Me
+            </h2>
 
-        <p>
-            I'm particularly interested in software development,
-            website creation and mobile applications.
-            I enjoy learning how technology works and
-            using programming to solve problems.
-        </p>
+            <p class="leading-relaxed mb-4">
+                I'm an IT student based in Perth, Australia,
+                with a strong interest in programming and
+                technology-related fields.
+            </p>
 
-        <p>
-            My goal is to continue developing my programming
-            skills and gain experience creating software
-            applications that people can use in their
-            everyday lives.
-        </p>
+            <p class="leading-relaxed mb-4">
+                I'm particularly interested in software development,
+                website creation and mobile applications.
+                I enjoy learning how technology works and
+                using programming to solve problems.
+            </p>
+
+            <p class="leading-relaxed">
+                My goal is to continue developing my programming
+                skills and gain experience creating software
+                applications that people can use in their
+                everyday lives.
+            </p>
+
+        </div>
 
     </div>
 
@@ -70,11 +82,15 @@
 
     </main>
 
-    <footer>
+    <footer class="bg-[#CCD5AE] border border-black p-5 text-center">
+
         <p>
-            <a href="copyright.html">Copyright</a>
+            <a href="copyright.html" class="font-semibold text-black hover:text-[#6B705C]">
+                Copyright
+            </a>
             &copy; 2026 Cristina Noguera Martinez. All rights reserved.
         </p>
+
     </footer>
 
 </body>

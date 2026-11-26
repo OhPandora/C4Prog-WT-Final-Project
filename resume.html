@@ -1,35 +1,51 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Cristina Noguera Martinez</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
 </head>
+
 <body>
 
-    <header>
-        <nav class="header-container">
-            <h1>Cristina Noguera Martinez</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="sample-projects/mywork.html">Sample Project</a></li>
-            </ul>
-        </nav>
+    <header class="bg-[#CCD5AE] border border-black p-5">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <h1 class="text-xl font-bold">
+                Cristina Noguera Martinez
+            </h1>
+
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-5">
+                    <li><a href="index.html" class="font-bold text-black hover:text-[#6B705C]">Home</a></li>
+                    <li><a href="about.html" class="font-bold text-black hover:text-[#6B705C]">About</a></li>
+                    <li><a href="resume.html" class="font-bold text-black hover:text-[#6B705C]">Resume</a></li>
+                    <li><a href="projects.html" class="font-bold text-black hover:text-[#6B705C]">Projects</a></li>
+                    <li><a href="contact.html" class="font-bold text-black hover:text-[#6B705C]">Contact</a></li>
+                    <li><a href="sample-projects/mywork.html" class="font-bold text-black hover:text-[#6B705C]">Sample Project</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main class="resume-container">
-        <h2>My Resume</h2>
+    <main class="max-w-6xl mx-auto p-6">
 
-       <section class="resume-section">
-            <h3>Profile</h3>
+       <h2 class="text-3xl font-bold mb-8">
+           My Resume
+       </h2>
 
-            <p>
+       <!-- Profile Section -->
+        <section class="bg-[#FAEDCD] p-8 rounded-xl mb-8">
+
+            <h3 class="text-xl font-bold mb-4">
+                Profile
+            </h3>
+
+            <p class="leading-relaxed mb-4">
                 I am an IT student interested in programming, with an educational
                 background in East Asian Studies and Project Management. My drive
                 and motivation is evidenced by the fact I have achieved three
@@ -39,93 +55,118 @@
                 new challenges.
             </p>
 
-            <p>
+            <p class="leading-relaxed">
                 My ultimate goal is to become a software developer in order to
                 create innovative and useful applications.
             </p>
+
         </section>
 
-        <section class="resume-section">
-            <h3>Education</h3>
+        <!-- Education Section -->
+<section class="bg-[#E9EDC9] p-8 rounded-xl mb-8">
 
-            <article class="education-item">
-                <h4>Certificate IV in Information Technology (Programming)</h4>
-                <p>Australia – Currently studying</p>
-                <p>
-                    Developing skills in programming, web development, software
-                    development and database technologies.
-                </p>
-            </article>
+    <h3 class="text-xl font-bold mb-6">
+        Education
+    </h3>
 
-            <article class="education-item">
-                <h4>Diploma of Project Management</h4>
-                <p>Australia</p>
-                <p>
-                    Studied project planning, risk management, stakeholder
-                    communication and project coordination.
-                </p>
-            </article>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-            <article class="education-item">
-                <h4>Bachelor's Degree in East Asian Studies – Korean Studies</h4>
-                <p>Spain</p>
-                <p>
-                    Focused on East Asian culture, history, society and Korean studies.
-                </p>
-            </article>
-        </section>
+        <article class="bg-[#FAEDCD] p-6 rounded-xl">
+            <h4 class="text-lg font-bold mb-2">
+                Certificate IV in Information Technology (Programming)
+            </h4>
+            <p class="font-semibold mb-3">Australia – Currently studying</p>
+            <p class="leading-relaxed">
+                Developing skills in programming, web development, software
+                development and database technologies.
+            </p>
+        </article>
 
-        <section class="resume-section">
-            <h3>Technical Skills</h3>
+        <article class="bg-[#FAEDCD] p-6 rounded-xl">
+            <h4 class="text-lg font-bold mb-2">
+                Diploma of Project Management
+            </h4>
+            <p class="font-semibold mb-3">Australia</p>
+            <p class="leading-relaxed">
+                Studied project planning, risk management, stakeholder
+                communication and project coordination.
+            </p>
+        </article>
 
-            <div class="skills-container">
+        <article class="bg-[#FAEDCD] p-6 rounded-xl">
+            <h4 class="text-lg font-bold mb-2">
+                Bachelor's Degree in East Asian Studies – Korean Studies
+            </h4>
+            <p class="font-semibold mb-3">Spain</p>
+            <p class="leading-relaxed">
+                Focused on East Asian culture, history, society and Korean studies.
+            </p>
+        </article>
 
-                <section class="skill-category">
-                    <h4>Programming Languages</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>C#</li>
-                    </ul>
-                </section>
+    </div>
 
-                <section class="skill-category">
-                    <h4>Web Development</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Tailwind CSS</li>
-                    </ul>
-                </section>
+</section>
 
-                <section class="skill-category">
-                    <h4>Tools & Technologies</h4>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Git and GitHub</li>
-                    </ul>
-                </section>
+        <!-- Technical Skills Section -->
+<section class="bg-[#E9EDC9] p-8 rounded-xl mb-8">
 
-                <section class="skill-category">
-                    <h4>Development Skills</h4>
-                    <ul>
-                        <li>Object-Oriented Programming (OOP)</li>
-                        <li>User Interface Development</li>
-                        <li>Debugging and Testing</li>
-                        <li>Version Control</li>
-                        <li>Responsive Web Design</li>
-                        <li>Working with APIs</li>
-                    </ul>
-                </section>
+    <h3 class="text-xl font-bold mb-6">
+        Technical Skills
+    </h3>
 
-            </div>
-        </section>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <article class="bg-[#FAEDCD] p-5 rounded-xl">
+            <h4 class="font-bold mb-3">Programming Languages</h4>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Python</li>
+                <li>C#</li>
+            </ul>
+        </article>
+
+        <article class="bg-[#FAEDCD] p-5 rounded-xl">
+            <h4 class="font-bold mb-3">Web Development</h4>
+            <ul class="list-disc list-inside space-y-2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Tailwind CSS</li>
+            </ul>
+        </article>
+
+        <article class="bg-[#FAEDCD] p-5 rounded-xl">
+            <h4 class="font-bold mb-3">Tools & Technologies</h4>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Visual Studio Code</li>
+                <li>Git and GitHub</li>
+            </ul>
+        </article>
+
+        <article class="bg-[#FAEDCD] p-5 rounded-xl">
+            <h4 class="font-bold mb-3">Development Skills</h4>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>User Interface Development</li>
+                <li>Debugging and Testing</li>
+                <li>Version Control</li>
+                <li>Responsive Web Design</li>
+                <li>Working with APIs</li>
+            </ul>
+        </article>
+
+    </div>
+
+</section>
     </main>
 
-    <footer>
+    <footer class="bg-[#CCD5AE] border border-black p-5 text-center">
+
         <p>
-            <a href="copyright.html">Copyright</a>
+            <a href="copyright.html" class="font-semibold text-black hover:text-[#6B705C]">
+                Copyright
+            </a>
             &copy; 2026 Cristina Noguera Martinez. All rights reserved.
         </p>
+
     </footer>
 
 </body>

@@ -1,88 +1,136 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Project | Cristina Noguera Martinez</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
     <script src="../assets/js/api-key.js" defer></script>
     <script src="../assets/js/sample-project.js" defer></script>
 </head>
+
 <body>
 
-    <header>
-        <nav class="header-container">
-            <h1>Cristina Noguera Martinez</h1>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="mywork.html">Sample Project</a></li>
-            </ul>
-        </nav>
+    <header class="bg-[#CCD5AE] border border-black p-5">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <h1 class="text-xl font-bold">
+                Cristina Noguera Martinez
+            </h1>
+
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-5">
+                    <li><a href="../index.html" class="font-bold text-black hover:text-[#6B705C]">Home</a></li>
+                    <li><a href="../about.html" class="font-bold text-black hover:text-[#6B705C]">About</a></li>
+                    <li><a href="../resume.html" class="font-bold text-black hover:text-[#6B705C]">Resume</a></li>
+                    <li><a href="../projects.html" class="font-bold text-black hover:text-[#6B705C]">Projects</a></li>
+                    <li><a href="../contact.html" class="font-bold text-black hover:text-[#6B705C]">Contact</a></li>
+                    <li><a href="mywork.html" class="font-bold text-black hover:text-[#6B705C]">Sample Project</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main>
-        <h2 class="sample-title">Sample Project</h2>
+    <main class="max-w-6xl mx-auto p-6">
+
+        <h2 class="text-3xl font-bold mb-8">
+            Sample Project
+        </h2>
 
         
-        <section class="api-section">
-            <h3>Ninja API App</h3>
+        <!-- Ninja API Section -->
+<section class="bg-[#FAEDCD] p-8 rounded-xl mb-8">
 
-            <p>Select an API and enter a word to search.</p>
+    <h3 class="text-2xl font-bold mb-4">
+        Ninja API App
+    </h3>
 
-            <form id="api-form" novalidate>
-                <fieldset>
-                    <legend>Pick from the following APIs</legend>
+    <p class="mb-6">
+        Select an API and enter a word to search.
+    </p>
 
-                    <div class="api-options">
-                        <label for="dictionary-api">
-                            <input type="checkbox" id="dictionary-api"
-                                name="api-option" value="dictionary">
-                            Dictionary
-                        </label>
+    <form id="api-form" novalidate>
 
-                        <label for="thesaurus-api">
-                            <input type="checkbox" id="thesaurus-api"
-                                name="api-option" value="thesaurus">
-                            Thesaurus
-                        </label>
-                    </div>
-                </fieldset>
+        <fieldset class="border border-[#CCD5AE] rounded-lg p-5 mb-6">
 
-                <div class="form-card">
-                    <div class="form-input">
-                        <label for="search-word">Enter a word:</label>
-                        <input type="text" id="search-word"
-                            name="search-word" placeholder="e.g. computer" required>
-                    </div>
+            <legend class="font-bold px-2">
+                Pick from the following APIs
+            </legend>
 
-                    <button type="submit" id="get-response">
-                        Get Response
-                    </button>
-                </div>
-            </form>
+            <div class="flex flex-col sm:flex-row gap-5">
 
-            <section class="api-response" aria-live="polite">
-                <h4>API Response</h4>
+                <label for="dictionary-api" class="flex items-center gap-2">
+                    <input type="checkbox" id="dictionary-api"
+                        name="api-option" value="dictionary">
+                    Dictionary
+                </label>
 
-                <div id="response-content">
-                    Your API response will appear here.
-                </div>
-            </section>
-        </section>
+                <label for="thesaurus-api" class="flex items-center gap-2">
+                    <input type="checkbox" id="thesaurus-api"
+                        name="api-option" value="thesaurus">
+                    Thesaurus
+                </label>
+
+            </div>
+
+        </fieldset>
+
+        <div class="bg-[#E9EDC9] p-6 rounded-xl">
+
+            <div class="flex flex-col gap-2 mb-5">
+
+                <label for="search-word" class="font-semibold">
+                    Enter a word:
+                </label>
+
+                <input type="text" id="search-word"
+                    name="search-word"
+                    placeholder="e.g. computer"
+                    required
+                    class="border border-[#CCD5AE] rounded-lg p-3">
+
+            </div>
+
+            <button type="submit" id="get-response"
+                class="bg-[#FFC13B] text-black font-bold p-3 rounded-lg hover:bg-[#E9EDC9]">
+                Get Response
+            </button>
+
+        </div>
+
+    </form>
+
+    <!-- API Response -->
+    <section class="bg-white border border-[#CCD5AE] rounded-xl p-6 mt-6"
+        aria-live="polite">
+
+        <h4 class="text-xl font-bold mb-4">
+            API Response
+        </h4>
+
+        <div id="response-content">
+            Your API response will appear here.
+        </div>
+
+    </section>
+
+</section>
 
 
     </main>
 
-    <footer>
+    <footer class="bg-[#CCD5AE] border border-black p-5 text-center">
+
         <p>
-            2026 Cristina Noguera Martinez. All rights reserved.
-            <a href="../copyright.html">Copyright</a>
+            <a href="../copyright.html" class="font-semibold text-black hover:text-[#6B705C]">
+                Copyright
+            </a>
+            &copy; 2026 Cristina Noguera Martinez. All rights reserved.
         </p>
+
     </footer>
 
 </body>

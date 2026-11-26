@@ -1,99 +1,132 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Cristina Noguera Martinez</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
 </head>
+
 <body>
 
-    <header>
-        <nav class="header-container">
-            <h1>Cristina Noguera Martinez</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="sample-projects/mywork.html">Sample Project</a></li>
-            </ul>
-        </nav>
+    <header class="bg-[#CCD5AE] border border-black p-5">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <h1 class="text-xl font-bold">
+                Cristina Noguera Martinez
+            </h1>
+
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-5">
+                    <li><a href="index.html" class="font-bold text-black hover:text-[#6B705C]">Home</a></li>
+                    <li><a href="about.html" class="font-bold text-black hover:text-[#6B705C]">About</a></li>
+                    <li><a href="resume.html" class="font-bold text-black hover:text-[#6B705C]">Resume</a></li>
+                    <li><a href="projects.html" class="font-bold text-black hover:text-[#6B705C]">Projects</a></li>
+                    <li><a href="contact.html" class="font-bold text-black hover:text-[#6B705C]">Contact</a></li>
+                    <li><a href="sample-projects/mywork.html" class="font-bold text-black hover:text-[#6B705C]">Sample Project</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main>
-        <h2>My Projects</h2>
+    <main class="max-w-6xl mx-auto p-6">
+        <h2 class="text-3xl font-bold mb-8">
+            My Projects
+        </h2>
 
-        <div class="projects-container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <article class="project-card">
-                <h3>MyPet App</h3>
+            <!-- MyPet App -->
+            <article class="bg-[#FAEDCD] p-6 rounded-xl border border-[#CCD5AE]">
 
-                <img src="assets/img/MyPet.png" alt="MyPet application interface">
+                <h3 class="text-xl font-bold mb-4">MyPet App</h3>
 
-                <p>
-                    MyPet is a mobile application designed to manage pets profiles, 
+                <img src="assets/img/MyPet.png"
+                    alt="MyPet application interface"
+                    class="w-full rounded-lg mb-4">
+
+                <p class="leading-relaxed mb-4">
+                    MyPet is a mobile application designed to manage pets profiles,
                     health information, veterinary records and daily care.
                 </p>
 
-                <h4>Technologies Used:</h4>
-                <ul>
+                <h4 class="font-bold mb-2">Technologies Used:</h4>
+
+                <ul class="list-disc list-inside space-y-1">
                     <li>C#</li>
                     <li>.NET MAUI</li>
                     <li>XAML</li>
                     <li>API</li>
                 </ul>
+
             </article>
 
-            <article class="project-card">
-                <h3>Wordle Game</h3>
+            <!-- Wordle Game -->
+            <article class="bg-[#FAEDCD] p-6 rounded-xl border border-[#CCD5AE]">
 
-                <img src="assets/img/wordle.png" alt="Wordle Game project">
+                <h3 class="text-xl font-bold mb-4">Wordle Game</h3>
 
-                <p>
+                <img src="assets/img/wordle.png"
+                    alt="Wordle Game project"
+                    class="w-full rounded-lg mb-4">
+
+                <p class="leading-relaxed mb-4">
                     A Python-based word guessing game where players try to
                     discover a hidden word using clues and feedback.
                 </p>
 
-                <h4>Technologies Used:</h4>
-                <ul>
+                <h4 class="font-bold mb-2">Technologies Used:</h4>
+
+                <ul class="list-disc list-inside space-y-1">
                     <li>Python</li>
                     <li>Functions</li>
                     <li>Lists</li>
                     <li>File Handling</li>
                     <li>Unit Testing</li>
                 </ul>
+
             </article>
 
-            <article class="project-card">
-                <h3>Web Technologies Portfolio</h3>
+            <!-- Web Technologies Portfolio -->
+            <article class="bg-[#FAEDCD] p-6 rounded-xl border border-[#CCD5AE]">
 
-                <img src="assets/img/dashboard.png" alt="Dashboard web project">
+                <h3 class="text-xl font-bold mb-4">Web Technologies Portfolio</h3>
 
-                <p>
+                <img src="assets/img/dashboard.png"
+                    alt="Dashboard web project"
+                    class="w-full rounded-lg mb-4">
+
+                <p class="leading-relaxed mb-4">
                     A responsive web project built with HTML and Tailwind CSS,
                     featuring a clean layout and organised interface.
                 </p>
 
-                <h4>Technologies Used:</h4>
-                <ul>
+                <h4 class="font-bold mb-2">Technologies Used:</h4>
+
+                <ul class="list-disc list-inside space-y-1">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Tailwind CSS</li>
                     <li>Responsive Web Design</li>
                 </ul>
-            </article>
-        </div>
 
+            </article>
+
+        </div>
     </main>
 
-    <footer>
+    <footer class="bg-[#CCD5AE] border border-black p-5 text-center">
+
         <p>
-            <a href="copyright.html">Copyright</a>
-            2026 Cristina Noguera Martinez. All rights reserved.
+            <a href="copyright.html" class="font-semibold text-black hover:text-[#6B705C]">
+                Copyright
+            </a>
+            &copy; 2026 Cristina Noguera Martinez. All rights reserved.
         </p>
+
     </footer>
 
 </body>
